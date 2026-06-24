@@ -11,5 +11,9 @@ dependencies = [
     "langchain_community>=0.0.1",
     "langchain-groq>=0.0.1",
     "langchain-google-genai>=0.0.1",
+    "ipykernel>=6.0.0",
+    "jupyter>=1.0.0",
+    "notebook>=7.0.0",
+    "ipywidgets>=8.0.0",
     
 ]

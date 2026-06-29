@@ -16,6 +16,9 @@ dependencies = [
     "notebook>=7.0.0",
     "ipywidgets>=8.0.0",
     "langgraph>=0.2.0",
-    "langchain_tavily>=0.0.1"
-    
+    "langchain_tavily>=0.0.1",
+    "langchain-mcp-adapters",
+    "mcp",
+    "pypdf",
+    "pymupdf",
 ]

@@ -10,3 +10,9 @@ wheels/
 .venv
 .env
 .env.*
+
+# Generated / data directories (not source code)
+RAG/vector_store/
+vector_store_test/
+RAG/data/
+pdf/

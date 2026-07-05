@@ -26,5 +26,8 @@ dependencies = [
     "torch==2.2.2",
     "sentence-transformers==3.2.1",
     "langchain-text-splitters",
+    "deepagents",
+    "numpy<2",
+    
 ]   
 

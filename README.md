@@ -23,6 +23,35 @@ AgenticAI/
 │   ├── model_integraion.ipynb   # Model integration examples
 │   ├── streaming.ipynb           # Streaming response implementations
 │   └── tools.ipynb               # Langchain tools usage
+├── RAG/
+│   ├── pdf_loader.ipynb          # RAG pipeline (data ingestion → vector DB → LLM)
+│   └── pdf_loader2.ipynb         # Fixed & enhanced RAG pipeline
+├── src/
+│   ├── __init__.py
+│   ├── core/                     # Global configurations and logging
+│   │   ├── config.py
+│   │   ├── logger.py
+│   │   └── security.py           # e.g., role-based access control
+│   ├── ingestion/                # Document processing and storage
+│   │   ├── loaders.py            # Extract text/tables from PDFs/Docs
+│   │   ├── chunkers.py           # Structure-aware chunking rules
+│   │   └── indexers.py           # Metadata handling and vector uploads
+│   ├── retrieval/                # Information retrieval and ranking
+│   │   ├── embedder.py           # Text to vector conversion
+│   │   ├── vector_db.py          # Database clients (e.g., Pinecone, Milvus)
+│   │   ├── hybrid_search.py      # Dense/sparse merging & MMR
+│   │   └── rerank.py             # Cross-encoder re-rankers
+│   ├── generation/               # LLM & Response generation
+│   │   ├── prompts.py            # Prompt templates & context budgeting
+│   │   ├── guardrails.py         # Response constraints and hallucination checks
+│   │   └── llm_client.py         # Calls to hosted/local LLM endpoints
+│   ├── evaluation/               # Retrieval quality & citation metrics
+│   │   └── metrics.py
+│   ├── data_loader.py
+│   ├── vectorstore.py
+│   ├── embedding.py
+│   ├── chunking.py
+│   └── search.py
 ├── main.py                       # Main application entry point
 ├── pyproject.toml                # Project dependencies and configuration
 └── .env                          # Environment variables (API keys)

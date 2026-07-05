@@ -23,6 +23,11 @@ AgenticAI/
 │   ├── model_integraion.ipynb   # Model integration examples
 │   ├── streaming.ipynb           # Streaming response implementations
 │   └── tools.ipynb               # Langchain tools usage
+├── deepAgent/
+│   └── notebooks/
+│       ├── deepagent.ipynb       # DeepAgent implementation using deepagents library
+│       ├── deepagent_fixed.ipynb # Fixed version with corrected imports/syntax
+│       └── basic.ipynb           # Basic vs DeepAgent comparison notebook
 ├── RAG/
 │   ├── pdf_loader.ipynb          # RAG pipeline (data ingestion → vector DB → LLM)
 │   └── pdf_loader2.ipynb         # Fixed & enhanced RAG pipeline
@@ -82,6 +87,7 @@ uv sync
 OPENAI_API_KEY=your_openai_api_key
 GROQ_API_KEY=your_groq_api_key
 GOOGLE_API_KEY=your_google_api_key
+TAVILY_API_KEY=your_tavily_api_key
 ```
 
 2. Activate the virtual environment:
@@ -103,11 +109,20 @@ Launch Jupyter to explore the interactive notebooks:
 jupyter notebook
 ```
 
-Then navigate to the `Langchain/` directory to explore:
-- **langchain_intro.ipynb**: Learn Langchain basics
-- **model_integraion.ipynb**: See how to integrate different AI models
-- **streaming.ipynb**: Implement streaming responses
-- **tools.ipynb**: Use Langchain tools to extend agent capabilities
+Then explore the available notebooks:
+
+**Langchain basics:**
+- **Langchain/langchain_intro.ipynb**: Learn Langchain basics
+- **Langchain/model_integraion.ipynb**: See how to integrate different AI models
+- **Langchain/streaming.ipynb**: Implement streaming responses
+- **Langchain/tools.ipynb**: Use Langchain tools to extend agent capabilities
+
+**DeepAgent:**
+- **deepAgent/notebooks/deepagent_fixed.ipynb**: Create agents using the DeepAgent library with Groq and Tavily search
+- **deepAgent/notebooks/basic.ipynb**: Compare basic LangChain agents vs DeepAgent
+
+**RAG pipelines:**
+- **RAG/pdf_loader2.ipynb**: Document loading, chunking, embedding, and retrieval-augmented generation
 
 ## Dependencies
 
